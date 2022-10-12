@@ -94,7 +94,7 @@ textarea {
 #submit {
     display: block;
     width: 60vw;
-    margin: 20 auto;
+    margin: 0 auto;
     padding: 0.80rem;
     font-family: 'Nunito', sans-serif;
     background-color: #051e3e;
