@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <meta charset="UTF-8" />
+        <title>Survey Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1 id="title"> Reading Interest Survey Form </h1>
+            </div>
+
+            <div class="description">
+                <p id="description"> Hello, and welcome! My name is Ramona and I am looking forward to finding out your
+                    reading preferences. <br /> Thank you for taking the time to complete this survey. </p>
+            </div>
+
+            <form id="survey-form">
+                <div class="name">
+                    <label for="name" id="name-label">What is your name? </label>
+                    <input type="text" id="name" name="name" placeholder="Enter you name here" required />
+                </div>
+
+                <div class="email">
+                    <label for name="email" id="email-label">What is your email address? </label>
+                    <input type="email" id="email" name="email" placeholder="Enter you e-mail here" required />
+                </div>
+
+                <div name="age">
+                    <label for name="number" id="number-label">How old are you?</label>
+                    <input type="number" id="number" name="number" min="5" max="120" placeholder="Select your age" />
+                </div>
+
+                <div class="type-of-books">
+                    <label for name="dropdown"> What type of books do you usualy read?
+                        <select id="dropdown" name="type-of-books">
+                            <option value=" "> (Select one)
+                            <option value="1"> Fiction
+                            <option value="2"> Non-fiction
+                        </select>
+                    </label>
+                </div>
+
+                <div class="usage">
+                    <legend> What do you usually use for reading? </legend>
+                    <div>
+                        <input type="radio" class="usage" id="physical" value="physical" name="usage" />
+                        <label for="physical"> Physical book </label>
+                    </div>
+                    <div>
+                        <input type="radio" class="usage" id="audio" value="audio" name="usage" />
+                        <label for="audio"> Audio book</label>
+                    </div>
+                    <div>
+                        <input type="radio" class="usage" id="phoneTablet" value="Phone tablet" name="usage" />
+                        <label> Phone or tablet</label>
+                    </div>
+                    <div>
+                        <input type="radio" class="usage" id="computer" value="computer" name="usage" />
+                        <label> Computer</label>
+                    </div>
+                </div>
+
+                <div class="choices">
+                    <legend> How would you choose a book to read? </legend>
+                    <div class="blog">
+                        <input type="checkbox" class="choices" id="blog" value="blog" name="choice" />
+                        <label for="blog"> Reading blog</label>
+                    </div>
+                    <div class="website">
+                        <input type="checkbox" class="choices" id="website" value="website" name="choice" />
+                        <label for="website"> Books website</label>
+                    </div>
+                    <div class="friends">
+                        <input type="checkbox" class="choices" id="friends" value="friends" name="choice" />
+                        <label for="friends"> Friends recommendation</label>
+                    </div>
+                    <div class="family">
+                        <input type="checkbox" class="choices" id="family" value="family" name="choice" />
+                        <label for="family"> Family recommendation</label>
+                    </div>
+                </div>
+
+                <div class="additional-information">
+                    <label for="add-info"> Any other relevant information? </label>
+                    <textarea id="add-info" name="add-info" rows="6" cols="50">Type your comments here </textarea>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" id="submit" value="Submit your answers" />
+                </div>
+
+            </form>
+        </div>
+    </body>
+
+</html>
